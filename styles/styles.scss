@@ -4,6 +4,9 @@
 
 @import "./variables";
 @import "./header";
+@import "./nav";
+@import "./main";
+@import "./modal";
 *{
     margin: 0;
     padding: 0;
@@ -16,4 +19,13 @@ body{
 a{
     text-decoration: none;
     color: black;
+}
+section{
+    display: flex;
+    gap: 20px;
+}
+.hide{
+    .create span, .nav-middle span, .nav-bottom span {
+        display: none;
+    }
 }
