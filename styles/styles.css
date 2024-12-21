@@ -163,7 +163,7 @@ main {
   }
 }
 main .top {
-  justify-content: space-between;
+  justify-content: space-between !important;
   padding: 5px 10px;
 }
 main .top .left {
@@ -213,7 +213,7 @@ main .mails-area .mail:hover .right .delete {
   align-items: center;
 }
 main .mails-area .mail .left {
-  justify-content: start;
+  justify-content: start !important;
   gap: 5px;
 }
 main .mails-area .mail .left i {
@@ -226,6 +226,7 @@ main .mails-area .mail .left span {
 main .mails-area .mail .right {
   justify-content: space-between;
   font-size: 17px;
+  padding-right: 20px;
 }
 main .mails-area .mail .right .message-title {
   font-weight: bold;

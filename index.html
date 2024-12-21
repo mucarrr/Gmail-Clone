@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gmail Clone</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 <body>
     <header id="header">
@@ -93,7 +94,7 @@
             </div>
            </div>
            <div class="mails-area">
-            <div class="mail">
+            <!-- <div class="mail">
                 <div class="left">
                     <input type="checkbox"/>
                     <i class="bi bi-star"></i>
@@ -107,36 +108,8 @@
                         <i class="bi bi-trash-fill"></i>
                     </div>
                 </div>
-            </div><div class="mail">
-                <div class="left">
-                    <input type="checkbox"/>
-                    <i class="bi bi-star"></i>
-                    <span>Udemig</span>
-                </div>
-                <div class="right">
-                    <p class="message-title">Yazilim</p>
-                    <p class="message-desc">yazilim kursu BASLIYOR!!</p>
-                    <p class="message-date">10 Aralik</p>
-                    <div class="delete">
-                        <i class="bi bi-trash-fill"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="mail">
-                <div class="left">
-                    <input type="checkbox"/>
-                    <i class="bi bi-star"></i>
-                    <span>Udemig</span>
-                </div>
-                <div class="right">
-                    <p class="message-title">Yazilim</p>
-                    <p class="message-desc">yazilim kursu BASLIYOR!!</p>
-                    <p class="message-date">10 Aralik</p>
-                    <div class="delete">
-                        <i class="bi bi-trash-fill"></i>
-                    </div>
-                </div>
-            </div>
+            </div> -->
+            
            </div>
         </main>
         <aside id="aside">
@@ -154,7 +127,7 @@
             <form id="create-mail-form">
                 <label for="who">To</label>
                 <input type="text" id="who">
-                <label for="subject">To</label>
+                <label for="subject">Subject</label>
                 <input type="text" id="subject">
                 <label></label>
                 <textarea></textarea>
@@ -163,7 +136,7 @@
         </div>
     </div>
 
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
     <script src="./js/main.js" type="module"></script>
 </body>
