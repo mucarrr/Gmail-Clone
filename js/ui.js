@@ -9,7 +9,7 @@ export const renderMails =(outlet, data)=>{
     <div class="mail" data-id="${mail.id}">
                 <div class="left">
                     <input type="checkbox"/>
-                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star${mail.starred  ? "-fill" : ""}"></i>
                     <span>${mail.receiver}</span>
                 </div>
                 <div class="right">
@@ -24,4 +24,18 @@ export const renderMails =(outlet, data)=>{
     
     `).join(" ");
 
+}
+
+export function renderCategories(outlet, data, selectedCategory){
+    outlet.innerHTML =  "";
+    data.forEach((category)=>{
+        const categoryItem = document.createElement("a")
+        categoryItem.dataset.name = category.title;
+        categoryItem.className = selectedCategory === category.title && "active";
+        categoryItem.innerHTML = `
+        <i class="${category.class}"></i>
+                    <span>${category.title}</span>
+        `;
+        outlet.appendChild(categoryItem);
+    })
 }

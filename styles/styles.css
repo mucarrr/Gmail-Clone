@@ -390,4 +390,8 @@ section {
 
 .hide .create span, .hide .nav-middle span, .hide .nav-bottom span {
   display: none;
+}
+
+.bi-star-fill {
+  color: #ece852;
 }/*# sourceMappingURL=styles.css.map */
